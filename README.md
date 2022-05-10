@@ -12,7 +12,7 @@ Data Structures classification:
 Let me use a small analogy to explain the contiguous blocks of memory storage.  
 Say there is  an array  
 int example_array[4] = {1,2,3,4};  
-Here, there are 4 elements in the array, they are stored in the memory block as follows.  
+Here, there are 4 elements in the array, they are stored in the memory block as follows.   
 Attempt | #1 | #2 | #3 | #4 | #5 | #6 | #7 | #8 | #9 | #10 | #11
 --- | --- | --- | --- |--- |--- |--- |--- |--- |--- |--- |---
 Seconds | 301 | 283 | 290 | 286 | 289 | 285 | 287 | 287 | 272 | 276 | 269
