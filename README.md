@@ -15,11 +15,9 @@ int example_array[4] = {1,2,3,4};
 Here, there are 4 elements in the array, they are stored in the memory block as follows. 
 
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+| 100      | 104           | 108  |
+|:-------------:|:-------------:|:-----:|
+
 
 As the integer type in C language consumes 4 bytes, the first element consumed 4 bytes of memory so on and so forth
 
