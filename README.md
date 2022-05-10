@@ -13,7 +13,7 @@ Let me use a small analogy to explain the contiguous blocks of memory storage.
 Say there is  an array  
 int example_array[4] = {1,2,3,4};  
 Here, there are 4 elements in the array, they are stored in the memory block as follows.  
-| 100 | 104 | 108 | 112 |
+| 100 | 104 | 108 | 112 |  
 |-|-|-|-|  
 
 As the integer type in C language consumes 4 bytes, the first element consumed 4 bytes of memory so on and so forth
