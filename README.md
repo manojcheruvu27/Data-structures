@@ -1,4 +1,7 @@
 
+
+
+
 # DATA STRUCTURES THROUGH C
 
 👋 For all the enthusiastics wanting to learn Data Structures👨‍💻, find the code references in the code section of this repository.
@@ -34,9 +37,9 @@ Here, there are 4 elements in the array, they are stored in the memory block as 
 
 As the integer type in C language consumes 4 bytes, the first element consumed 4 bytes of memory so on and so forth  
 4) Arrays are primitive data structures.  
-5) Say there are lakhs of employee id's  that needs to be stored, normal variables wouldn't finish the job. Therefore, we make use of arrays in such scenarios.  
+5) Say there are five employee id's  that needs to be stored, normal variables wouldn't finish the job. Therefore, we make use of arrays in such scenarios.  
 6) Declaration of an array: datatype arrayname[Size].  
-Ex: int employee[100000].  
+Ex: int employee[5].  
 7) Address of data element, A[k] = BA(A) + w(k – lower_bound)  
 Here, A is the array, k is the index of the element of which we have to calculate the address, BA is
 the base address of the array A, and w is the size of one element in memory, for example, size of
@@ -49,23 +52,51 @@ in the array.
 10) Collecting input from the keyboard, let us consider the employees analogy.  
 ```c
 #include<stdio.h>
-#define size 100000
+#define size 5  // Defining size
 int main()
 {
-   int employee[size];
-   for(i=0;i<size;i++)
+   int employee[size]; // Array Initialization
+   for(i=0;i<=size;i++)
    {
-     scanf("%d",&employee[i]);
+     scanf("%d",&employee[i]); 
    }
  }
+
+ /* Working logic of the for loop, 
+ iteration 1: i=0;
+ 0 < 5, therefore enters the body of the for loop;
+ scanf("%d",&employee[0]);, We are storing the input at the first location of the array;
+.
+.
+.
+.
+iteration 6: i = 6;
+6<5 is not true, therefore control exists the for loop.
+*/
 ```
+11) Say, we need to print the employee ids, the working is same as taking input, except for the usage of printf in the place of scanf
 
+```c
+#include<stdio.h>
+#define size 5  // Defining size
+int main()
+{
+   int employee[size]; // Array Initialization
+   for(i=0;i<=size;i++)
+   {
+     printf("%d",employee[i]); 
+   }
+ }
 
-```mermaid
-  graph TD;
-      Arrays-->One-Dimensional Array;
-      A-->C;
-      B-->D;
-      C-->D;
+ /* Working logic of the for loop, 
+ iteration 1: i=0;
+ 0 < 5, therefore enters the body of the for loop;
+ printf("%d",&employee[0]);, We are printing the id at the first location of the array;
+.
+.
+.
+.
+iteration 6: i = 6;
+6<5 is not true, therefore control exists the for loop.
+*/
 ```
-
